@@ -1,117 +1,146 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.container h1 {
   text-align: center;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.container h2 {
+  text-align: center;
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.seccion {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  flex-direction: row;
+  width: 70vw;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.seccion h4 {
+  text-align: center;
+}
+.articulo {
+  border: 2px solid black;
+  padding: 1vw;
+  margin: 0 1px;
+}
+.articulo ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 30vh;
+}
+.articulo:nth-child(even) ul {
+  height: 40vh;
+  width: 30vw;
+}
+.articulo ul li {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all ease-in 0.5s;
+  margin: 3px 0;
+}
+.articulo ul li p {
+  width: 60%;
+  display: none;
+}
+.articulo ul li:hover span {
+  text-decoration: underline 3px #bd8b28;
+}
+.articulo ul li:hover > p {
+  display: block;
+  background-color: #80808080;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 15px;
+  padding: 3px;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  margin: 3px 0 5px 0;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 7vh;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.info h2 {
+  width: 100%;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.info article {
+  width: 30%;
+  text-align: center;
+  border: 2px solid black;
+  margin: 2vh;
+  padding: 1vw;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.info article > span {
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.3em;
 }
-
+.info p {
+  margin-top: 2vh;
+  text-align: left;
+  width: 100%;
+}
+.info article:last-child {
+  width: 35%;
+}
+.info article:last-child p {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info article:last-child p > span {
+  margin: 3px 0;
+  padding: 3px;
+}
+.gold {
+  color: #bd8b28;
+  text-shadow: 0 0 1px #ffd700;
+}
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .articulo {
+    border: 2px solid black;
+    margin: 3vh 0;
+    padding: 3vw;
+  }
+  .seccion {
     flex-direction: column;
+  }
+  .articulo:nth-child(even) ul {
+    width: 70vw;
+    height: 40vh;
+  }
+  .articulo ul li p {
+    user-select: none;
+  }
+  .articulo ul li span {
+    user-select: all;
+  }
+  .articulo ul {
+    text-align: center;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info article {
+    padding: 1vh;
+    width: 77vw;
+  }
+  .info article:last-child {
+    width: 80vw;
   }
 }
 

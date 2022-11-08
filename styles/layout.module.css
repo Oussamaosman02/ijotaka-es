@@ -1,0 +1,36 @@
+.main {
+  background-color: #fff;
+}
+
+.kali {
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  color: #bd8b28;
+  text-shadow: 0 0 1px #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: kali 3s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  text-align: center;
+}
+
+@keyframes kali {
+  from {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+  }
+}
