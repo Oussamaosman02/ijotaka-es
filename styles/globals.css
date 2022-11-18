@@ -10,19 +10,17 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-x: hidden;
 }
+body {
+  min-height: 100vh;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-/*
+
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
   body {
-    color: white;
-    background: black;
+    background: #000;
+    color: #fff;
   }
 }
-
-*/

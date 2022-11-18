@@ -1,16 +1,18 @@
-import styles from '@s/header.module.css';
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import styles from '@s/header.module.css'
+import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-export default function Header() {
-  const router = useRouter();
+export default function Header () {
+  const router = useRouter()
   return (
     <>
       <Head>
-        <title>IJotaKa</title>
+        <title>IJKA</title>
         <meta name='description' content='Agencia de creación digital' />
         <link rel='icon' href='/favicon.ico' />
+        <meta name='viewport' content='viewport-fit=cover' />
+        <meta name='viewport' content='width=device-width' />
       </Head>
       <header className={styles.header}>
         <h1>
@@ -19,11 +21,11 @@ export default function Header() {
         <div>
           <h3
             className={
-              router.pathname === '/us' ? styles.active : styles.inactive
+              router.pathname === '/tecnologias' ? styles.active : styles.inactive
             }
           >
-            <Link href='/us'>
-              <a>Nosotros</a>
+            <Link href='/tecnologias'>
+              <a>Tools</a>
             </Link>
           </h3>
           <h3
@@ -40,15 +42,15 @@ export default function Header() {
           </h3>
           <h3
             className={
-              router.pathname === '/made' ? styles.active : styles.inactive
+              router.pathname === '/clientes' ? styles.active : styles.inactive
             }
           >
-            <Link href='/made'>
+            <Link href='/clientes'>
               <a>Clientes</a>
             </Link>
           </h3>
         </div>
       </header>
     </>
-  );
+  )
 }

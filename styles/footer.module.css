@@ -1,22 +1,29 @@
-.footer{
+.footer {
   background-color: #80808080;
+  padding-bottom: 10px;
 }
 .footer h1 {
-    text-align: center;
+  text-align: center;
 }
 .footer h2 {
-    text-align: center;
+  text-align: center;
 }
 .footer h4 {
-    text-align: center;
+  text-align: center;
 }
 .footer div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .gold {
-    color: #bd8b28;
-    text-shadow: 0 0 1px #ffd700;
+  color: #bd8b28;
+  text-shadow: 0 0 1px #ffd700;
+}
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background: #333;
+    color: #f5f5f5;
   }
+}

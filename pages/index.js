@@ -1,6 +1,6 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home () {
   return (
     <div className={styles.container}>
       <h1>Hacemos webs</h1>
@@ -90,9 +90,6 @@ export default function Home() {
               <span>+90 en LightHouse</span>
             </li>
             <li>
-              <span>Dominio con certificado SSL</span>
-            </li>
-            <li>
               <span className={styles.gold}>Renderizado en Servidor</span>
             </li>
           </ul>
@@ -159,5 +156,5 @@ export default function Home() {
         </article>
       </section>
     </div>
-  );
+  )
 }

@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 80vh;
 }
 .container h1 {
   text-align: center;
@@ -17,13 +18,10 @@
   flex-direction: row;
   width: 70vw;
 }
-.seccion h4 {
-  text-align: center;
-}
 .articulo {
   border: 2px solid black;
   padding: 1vw;
-  margin: 0 1px;
+  margin: 1vh 1px;
 }
 .articulo ul {
   display: flex;
@@ -36,6 +34,7 @@
 .articulo:nth-child(even) ul {
   min-height: 40vh;
   width: 30vw;
+  margin: 3vh 1px;
 }
 .articulo ul li {
   text-align: center;
@@ -48,63 +47,8 @@
   transition: all ease-in 0.5s;
   margin: 3px 0;
 }
-.articulo ul li p {
-  width: 60%;
-  display: none;
-}
-.articulo ul li:hover span {
+.articulo ul li:hover a {
   text-decoration: underline 3px #bd8b28;
-}
-.articulo ul li:hover > p {
-  display: block;
-  background-color: #80808080;
-  text-align: center;
-  font-size: 12px;
-  border-radius: 15px;
-  padding: 3px;
-  text-decoration: none;
-  margin: 3px 0 5px 0;
-}
-.info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 7vh;
-}
-.info h2 {
-  width: 100%;
-}
-.info article {
-  width: 30%;
-  text-align: center;
-  border: 2px solid black;
-  margin: 2vh;
-  padding: 1vw;
-}
-.info article > span {
-  width: 100%;
-  font-weight: 900;
-  font-size: 1.3em;
-}
-.info p {
-  margin-top: 2vh;
-  text-align: left;
-  width: 100%;
-}
-.info article:last-child {
-  width: 35%;
-}
-.info article:last-child p {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.info article:last-child p > span {
-  margin: 3px 0;
-  padding: 3px;
 }
 .gold {
   color: #bd8b28;
@@ -123,24 +67,8 @@
     width: 70vw;
     min-height: 40vh;
   }
-  .articulo ul li p {
-    user-select: none;
-  }
-  .articulo ul li span {
-    user-select: all;
-  }
   .articulo ul {
     text-align: center;
-  }
-  .info {
-    flex-direction: column;
-  }
-  .info article {
-    padding: 1vh;
-    width: 77vw;
-  }
-  .info article:last-child {
-    width: 80vw;
   }
 }
 
@@ -149,8 +77,7 @@
     background: #111;
     color: #f5f5f5;
   }
-  .articulo,
-  .info article {
+  .articulo {
     border-color: #fff;
   }
 }

@@ -26,17 +26,34 @@
 .header .inactive {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  padding: 3px;
+  padding: 3px 5px;
   background-color: #fff3;
 }
 .header .active {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  padding: 3px;
+  padding: 3px 5px;
   background-color: #fffa;
   font-size: 1.3em;
 }
 .active:nth-child(odd) {
   color: #bd8b28;
   text-shadow: 0 0 1px #ffd700;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background: #333;
+    color: #f5f5f5;
+  }
+  .header .inactive {
+    background-color: #6666;
+  }
+  .header .active {
+    background-color: #aaab;
+  }
+}
+.active:nth-child(odd) {
+  color: #bd8b2888;
+  text-shadow: 0 0 1px #ffd700ee;
 }
