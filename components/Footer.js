@@ -11,7 +11,7 @@ export default function Footer () {
         Agencia <span className={styles.gold}>web</span> internacional
       </h2>
       <div>
-        <span>&copy;2022</span>
+        <span>&copy;2023</span>
         <a href='https://ijotaka.com' target='_blank' rel='noopener noreferrer'>
           ijotak<span className={styles.gold}>a</span>.com
         </a>
