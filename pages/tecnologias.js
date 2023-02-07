@@ -1,7 +1,6 @@
 import styles from '../styles/tech.module.css'
 export default function Us () {
   return (
-
     <div className={styles.container}>
       <h1><span className={styles.gold}>Las tecnologías</span> que usamos</h1>
       <h2>Y quién más las usa</h2>
@@ -70,7 +69,7 @@ export default function Us () {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                More...
+                Más...
               </a>
             </li>
           </ul>
@@ -225,7 +224,7 @@ export default function Us () {
                 href='https://astro.build/showcase'
                 target='_blank'
                 rel='noreferrer noopener'
-              >More...
+              >Más...
               </a
             >
             </li>
